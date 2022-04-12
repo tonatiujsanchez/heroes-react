@@ -4,7 +4,6 @@ import { heroes } from "../data/heroes"
 
 export const getHeroesByName = (nameHero = '') => {
 
-    console.log('getHeroesByName Called...');
 
     if( nameHero === '' ) return []
 

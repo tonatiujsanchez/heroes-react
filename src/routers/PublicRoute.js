@@ -8,7 +8,6 @@ const PublicRoute = ({ children }) => {
 
     const { user } = useContext( AuthContext )
 
-    console.log( user.logged );
     return (
         user.logged
             ? <Navigate to="/marvel" />

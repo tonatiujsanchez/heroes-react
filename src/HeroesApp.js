@@ -4,7 +4,7 @@ import { authReducer } from "./auth/authReducer"
 import AppRouter from "./routers/AppRouter"
 
 
-const keyStorage = '1649706090096_heroesreact_user'
+const keyStorage = 'heroesreact_user_1649706090096'
 const init = () => {
 
   return JSON.parse( localStorage.getItem(keyStorage) ) || { logged: false }

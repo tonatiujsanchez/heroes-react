@@ -17,9 +17,13 @@ const LoginScreen = () => {
         name: 'B. Santiago'
       }
     }
+    
     dispatch( action )
 
-    navigate('/marvel', {
+
+    const lastPath = localStorage.getItem('heroesreact_lastpath') || '/marvel'
+    
+    navigate(lastPath, {
       replace: true
     })
 
