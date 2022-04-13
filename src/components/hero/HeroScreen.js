@@ -32,7 +32,7 @@ const HeroScreen = () => {
                     <h1>{superhero}</h1>
                     <button
                         onClick={handleReturn}
-                        className="btn btn-outline-danger">
+                        className="btn btn-outline-danger btn-back">
                         👈 Regresar
                     </button>
                 </div>
