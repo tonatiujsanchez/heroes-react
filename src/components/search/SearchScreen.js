@@ -41,10 +41,11 @@ const SearchScreen = () => {
             return
         }        
 
+
         navigate(`?q=${ searchText.trim() }`)
 
-        const heroesFilter = getHeroesByName( searchText.trim() )
-        setHeroesSearch( heroesFilter );
+        // const heroesFilter = getHeroesByName( searchText.trim() )
+        // setHeroesSearch( heroesFilter );
     }
 
     return (

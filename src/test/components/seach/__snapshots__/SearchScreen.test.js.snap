@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas a <SearchScreen /> Debe de mostrar a Batman y el input cib ek valir del query String 1`] = `
+Array [
+  <h1>
+    Buscar Heroes
+  </h1>,
+  <hr />,
+  <div
+    className="row mb-5"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control mb-3"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Batman, Wonder Woman, Spider Man, Captain America, etc."
+          type="text"
+          value="batman"
+        />
+        <div
+          className="d-grid gap-2"
+        >
+          <button
+            className="btn btn-success w-block"
+            type="submit"
+          >
+            Buscar Heroe
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="mb-3"
+        key="dc-batman"
+      >
+        <div
+          className="col"
+        >
+          <div
+            className="card animate__animated animate__fadeIn"
+          >
+            <div
+              className="row no-gutters"
+            >
+              <div
+                className="col-4"
+              >
+                <img
+                  alt="Batman"
+                  className="card-img"
+                  src="/assets/img/dc-batman.jpg"
+                />
+              </div>
+              <div
+                className="col-8"
+              >
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Batman
+                  </h5>
+                  <p
+                    className="card-text"
+                  >
+                    Bruce Wayne
+                  </p>
+                  <p
+                    className="card-text"
+                  >
+                    Detective Comics #27
+                  </p>
+                  <a
+                    href="/hero/dc-batman"
+                    onClick={[Function]}
+                  >
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas a <SearchScreen /> Debe de mostrar en mensaje de Sin resultados 1`] = `
+Array [
+  <h1>
+    Buscar Heroes
+  </h1>,
+  <hr />,
+  <div
+    className="row mb-5"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control mb-3"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Batman, Wonder Woman, Spider Man, Captain America, etc."
+          type="text"
+          value="123456"
+        />
+        <div
+          className="d-grid gap-2"
+        >
+          <button
+            className="btn btn-success w-block"
+            type="submit"
+          >
+            Buscar Heroe
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info text-center"
+      >
+        No se encontraron resultados de 
+        <span
+          className="fw-bold"
+        >
+          123456
+        </span>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas a <SearchScreen /> Debe mostrarse correctamente con valores por defecto 1`] = `
+Array [
+  <h1>
+    Buscar Heroes
+  </h1>,
+  <hr />,
+  <div
+    className="row mb-5"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control mb-3"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Batman, Wonder Woman, Spider Man, Captain America, etc."
+          type="text"
+          value=""
+        />
+        <div
+          className="d-grid gap-2"
+        >
+          <button
+            className="btn btn-success w-block"
+            type="submit"
+          >
+            Buscar Heroe
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info text-center"
+      >
+        Busca un héroe
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const HeroCard = ({ hero }) => {
 
-    const { id, superhero, publisher, alter_ego, first_appearance, characters, } = hero
+    const { id, superhero, alter_ego, first_appearance, characters, } = hero
 
     const imgPath = `/assets/img/${ id }.jpg`
     return (

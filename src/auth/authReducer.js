@@ -6,15 +6,6 @@ import { types } from "../types/types";
 // }
 
 
-// const loginAction = {
-//     type: types.login,
-//     paylod: {
-//         name: 'Brandon',
-//         email: 'brandon@gmail.com'
-//     }
-// }
-
-
 export const authReducer = ( state = {}, action ) => {
 
 
