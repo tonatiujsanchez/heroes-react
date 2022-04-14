@@ -1,17 +1,22 @@
 import { Link } from "react-router-dom"
 
+const heroImages = require.context('../../assets/img', true)
 
 export const HeroCard = ({ hero }) => {
 
     const { id, superhero, alter_ego, first_appearance, characters, } = hero
 
-    const imgPath = `/assets/img/${ id }.jpg`
+    // const imgPath = `/assets/img/${ id }.jpg`
     return (
         <div className="col">
             <div className="card animate__animated animate__fadeIn">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src={imgPath} alt={ superhero } className='card-img' />
+                        <img 
+                            src={heroImages(`./${ id }.jpg`)}
+                            // src={imgPath} 
+                            alt={ superhero } 
+                            className='card-img' />
                     </div>
                     <div className="col-8">
                         <div className="card-body">

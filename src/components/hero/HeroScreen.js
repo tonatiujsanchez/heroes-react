@@ -3,7 +3,7 @@ import { useParams, Navigate, useNavigate } from "react-router-dom"
 
 import { getHeroById } from "../../selectors/getHeroById"
 
-
+const heroImages = require.context('../../assets/img', true)
 
 const HeroScreen = () => {
 
@@ -16,7 +16,7 @@ const HeroScreen = () => {
     if (!hero) return <Navigate to='/' />
 
     const { id, superhero, publisher, alter_ego, first_appearance, characters, } = hero
-    const imgPath = `/assets/img/${id}.jpg`
+    // const imgPath = `/assets/img/${id}.jpg`
 
     const handleReturn = () => {
         navigate(-1)
@@ -25,7 +25,11 @@ const HeroScreen = () => {
     return (
         <div className="row mt-5">
             <div className="col-4 animate__animated animate__bounceInLeft">
-                <img src={imgPath} alt={superhero} className='img-thumbnail' />
+                <img 
+                    // src={imgPath} 
+                    src={ heroImages(`./${id}.jpg`) } 
+                    alt={superhero} 
+                    className='img-thumbnail' />
             </div>
             <div className="col-8 animate__animated animate__fadeIn">
                 <div className="mb-4 d-flex justify-content-between align-items-center">
